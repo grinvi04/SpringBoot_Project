@@ -8,7 +8,7 @@
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
 		<config>java:com.example.Application</config>
-		<config>java:customer.HelloApplication</config>
+		<config>java:customer.common.HelloApplication</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

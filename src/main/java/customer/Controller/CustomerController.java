@@ -7,8 +7,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import customer.CustomerJpaRepository;
 import customer.entity.Customer;
+import customer.repository.CustomerJpaRepository;
 
 
 @RestController
@@ -20,6 +20,13 @@ public class CustomerController {
 	@RequestMapping("/")
 	public String index() {
 		return "customer!";
+	}
+	
+	@RequestMapping("/hello")
+	public String hello(Model model) {
+		model.addAttribute("name", "SpringBlog from grinvi04");
+		return "hello";
+		
 	}
 	
 	@RequestMapping("/add")
