@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class WebConfiguration {
     @Bean
     ServletRegistrationBean h2servletRegistration(){
+    	// h2 console 페이지 접근을 위해 servlet mapping 설정 수정
         ServletRegistrationBean registrationBean = new ServletRegistrationBean( new WebServlet());
         registrationBean.addUrlMappings("/console/*");
         return registrationBean;
