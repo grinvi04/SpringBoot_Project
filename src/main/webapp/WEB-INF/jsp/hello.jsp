@@ -5,7 +5,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<script src="./bower_components/jquery/dist/jquery.min.js">
+<link rel="stylesheet" href="/webjars/bootstrap/4.0.0-alpha.3/dist/css/bootstrap.min.css">
+<script src="/webjars/jquery/3.1.0/dist/jquery.min.js"></script>
+<script src="/webjars/bootstrap/4.0.0-alpha.3/dist/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
 $(document).ready(function() {
 	$('div').text('jquery add');
 });
