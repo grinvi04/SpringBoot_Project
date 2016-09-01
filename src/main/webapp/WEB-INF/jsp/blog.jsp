@@ -70,17 +70,17 @@
 	<div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-preview">
-                    <a href="/post">
-                        <h2 class="post-title">
-                            Man must explore, and this is exploration at its greatest
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Problems look mighty small from 150 miles up
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>
-                </div>
+            	<c:forEach var="post" items="${postList}">
+	                <div class="post-preview">
+	                    <a href="/post/${post.id}">
+	                        <h2 class="post-title">
+	                            ${post.subject}
+	                        </h2>
+	                    </a>
+	                    <p class="post-meta">Posted by <a href="#">grinvi</a> on ${post.regDate}</p>
+	                </div>
+                </c:forEach>
+                <!--  
                 <hr>
                 <div class="post-preview">
                     <a href="/post">
@@ -115,6 +115,7 @@
                     <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on July 8, 2014</p>
                 </div>
                 <hr>
+                -->
                 <!-- Pager -->
                 <ul class="pager">
                     <li class="next">

@@ -94,6 +94,13 @@
 			<artifactId>origoni-startbootstrap-clean-blog</artifactId>
 			<version>1.0.3</version>
 		</dependency>
+		
+		<!-- 위지윅 에디터(Pen) 추가 -->
+		<dependency>
+		    <groupId>org.webjars.bower</groupId>
+		    <artifactId>pen</artifactId>
+		    <version>0.2.2</version>
+		</dependency>
 	</dependencies>
 
 	<build>
