@@ -101,6 +101,13 @@
 		    <artifactId>pen</artifactId>
 		    <version>0.2.2</version>
 		</dependency>
+		
+		<!-- lombok 추가 -->
+		<dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>1.16.4</version>
+		</dependency>
 	</dependencies>
 
 	<build>

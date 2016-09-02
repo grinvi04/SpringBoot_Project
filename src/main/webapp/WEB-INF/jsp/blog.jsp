@@ -74,8 +74,11 @@
 	                <div class="post-preview">
 	                    <a href="/post/${post.id}">
 	                        <h2 class="post-title">
-	                            ${post.subject}
+	                            ${post.title}
 	                        </h2>
+	                        <h3 class="post-subtitle">
+	                        	<c:out value="${post.subTitle}" escapeXml="true"></c:out>
+	                        </h3>
 	                    </a>
 	                    <p class="post-meta">Posted by <a href="#">grinvi</a> on ${post.regDate}</p>
 	                </div>

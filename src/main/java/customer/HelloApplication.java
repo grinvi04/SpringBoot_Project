@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import customer.entity.Customer;
 
-@SpringBootApplication
+//@SpringBootApplication
 @RestController
 public class HelloApplication {
 	
